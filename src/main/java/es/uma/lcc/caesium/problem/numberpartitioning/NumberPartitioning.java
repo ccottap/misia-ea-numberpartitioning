@@ -36,9 +36,9 @@ public class NumberPartitioning {
 	}
 	
 	/**
-	 * Creates a random instance given the bin size and the number of objects
-	 * @param binSize bin size
-	 * @param numObjects the number of objects
+	 * Creates a random instance given the number of values and the digits of each one
+	 * @param num number of values
+	 * @param digits digits per value
 	 */
 	public NumberPartitioning(int num, int digits){
 		setNum(num);
@@ -126,7 +126,7 @@ public class NumberPartitioning {
 	
 	/**
 	 * Returns the difference in weight (positive or negative) of
-	 * a certain partition with respect to the complementay partition.
+	 * a certain partition with respect to the complementary partition.
 	 * @param partition a collection of indices
 	 * @return the sum of values in the partition minus the sum of values not in the partition
 	 */
