@@ -1,4 +1,4 @@
-package es.uma.lcc.caesium.problem.numberpartitioning.es;
+package es.uma.lcc.caesium.problem.numberpartitioning.ea;
 
 import java.util.List;
 import java.util.Set;

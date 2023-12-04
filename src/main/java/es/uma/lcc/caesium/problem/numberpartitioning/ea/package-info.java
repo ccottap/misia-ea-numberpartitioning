@@ -3,4 +3,4 @@
  * @author ccottap
  * @version 1.0
  */
-package es.uma.lcc.caesium.problem.numberpartitioning.es;
+package es.uma.lcc.caesium.problem.numberpartitioning.ea;
