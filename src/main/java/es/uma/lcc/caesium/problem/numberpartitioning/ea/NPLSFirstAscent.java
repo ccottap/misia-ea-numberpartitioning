@@ -24,9 +24,9 @@ public class NPLSFirstAscent extends MutationOperator {
 
 	@Override
 	protected Individual _apply(List<Individual> parents) {
-		NumberPartitioningObjectiveFunction bpof = (NumberPartitioningObjectiveFunction)obj;
-		NumberPartitioning np = bpof.getNumberPartitioningData();
-		Set<Integer> partition = bpof.genotype2Collection(parents.get(0).getGenome());
+		NumberPartitioningObjectiveFunction npof = (NumberPartitioningObjectiveFunction)obj;
+		NumberPartitioning np = npof.getNumberPartitioningData();
+		Set<Integer> partition = npof.genotype2Collection(parents.get(0).getGenome());
 		int tests = 0;
 		
 		// TODO completar este método
@@ -44,7 +44,7 @@ public class NPLSFirstAscent extends MutationOperator {
 		obj.addExtraCost((double)tests/(double)np.getNum());
 		
 		Individual ind = new Individual();
-		ind.setGenome(bpof.collection2Genotype(partition));
+		ind.setGenome(npof.collection2Genotype(partition));
 		ind.touch();
 		return ind;
 	}
