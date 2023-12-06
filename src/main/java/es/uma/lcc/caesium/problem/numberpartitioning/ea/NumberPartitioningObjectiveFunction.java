@@ -26,11 +26,11 @@ public class NumberPartitioningObjectiveFunction extends DiscreteObjectiveFuncti
 	
 	/**
 	 * Basic constructor of the objective function
-	 * @param bp the problem instance
+	 * @param np the problem instance
 	 */
-	public NumberPartitioningObjectiveFunction(NumberPartitioning bp) {
-		super(bp.getNum(), 2);
-		this.np = bp;
+	public NumberPartitioningObjectiveFunction(NumberPartitioning np) {
+		super(np.getNum(), 2);
+		this.np = np;
 	}
 
 	@Override
